@@ -13,10 +13,7 @@ interface AccentUnderlineProps {
 const paths: Record<NonNullable<AccentUnderlineProps["variant"]>, string[]> = {
   wave: ["M 3 7 C 60 1, 140 12, 197 6"],
   double: ["M 2 5 L 198 5", "M 2 9 L 198 9"],
-  scribble: [
-    "M 3 8 C 25 3, 55 11, 90 6 S 150 11, 197 5",
-    "M 8 11 C 50 9, 100 12, 195 10",
-  ],
+  scribble: ["M 3 8 C 25 3, 55 11, 90 6 S 150 11, 197 5"],
 };
 
 export default function AccentUnderline({

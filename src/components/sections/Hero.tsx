@@ -41,7 +41,6 @@ export default function Hero() {
             variants={item}
             className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--bg-card)]/60 px-3 py-1.5 font-mono text-[11px] uppercase tracking-widest text-[var(--accent-primary)]"
           >
-            <span className="inline-block h-2 w-2 rounded-full bg-[var(--accent-primary)] shadow-[0_0_10px_var(--accent-primary)]" />
             {"<"} AI Engineer {"/>"}
             <span className="caret" aria-hidden />
           </motion.div>
@@ -231,27 +230,28 @@ function ProfilePortrait() {
             </div>
           </div>
 
-          <div className="mt-5 flex items-baseline justify-between gap-4">
-            <div>
+          <div className="mt-5">
+            <p
+              className="font-mono text-[10px] uppercase tracking-[0.45em]"
+              style={{ color: "#c66036" }}
+            >
+              AI Engineer
+            </p>
+            <div className="mt-1 flex items-baseline justify-between gap-4">
               <p
-                className="font-mono text-[10px] uppercase tracking-[0.45em]"
-                style={{ color: "#c66036" }}
-              >
-                AI Engineer
-              </p>
-              <p
-                className="mt-1 text-2xl font-semibold tracking-tight"
+                className="font-mono text-[10px] uppercase tracking-[0.3em]"
                 style={{ color: "#f4e9da" }}
               >
                 {personalInfo.name}
               </p>
+              <span className="flex shrink-0 items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.3em] text-emerald-300/80">
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70" />
+                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                </span>
+                shipping
+              </span>
             </div>
-            <p
-              className="shrink-0 font-mono text-[10px] uppercase tracking-[0.3em]"
-              style={{ color: "rgba(244,233,218,0.45)" }}
-            >
-              Nepal — IOE
-            </p>
           </div>
 
           <div
@@ -262,25 +262,14 @@ function ProfilePortrait() {
             }}
             aria-hidden
           />
-
-          <div className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--text-muted)]">
-            <span>Agents · LLMs · Vision</span>
-            <span className="flex items-center gap-1.5 text-emerald-300/80">
-              <span className="relative flex h-1.5 w-1.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70" />
-                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              </span>
-              shipping
-            </span>
-          </div>
         </div>
       </div>
     </motion.div>
   );
 }
 
-const letterOffsets = [0, -0.05, 0.025, -0.04, 0, 0.035, -0.02, 0.015];
-const letterRotations = [0, -1.4, 0.9, -0.8, 0.3, 1.2, -0.5, 0.7];
+const letterOffsets = [0, 0, 0, 0, 0, 0, 0, 0];
+const letterRotations = [0, 0, 0, 0, 0, 0, 0, 0];
 
 function LetterpressName({ text }: { text: string }) {
   return (

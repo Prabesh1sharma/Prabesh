@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ps-bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.13" />
+      <stop offset="100%" stop-color="#7b61ff" stop-opacity="0.13" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#050810" />
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#ps-bg)" />
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="15.25" fill="none" stroke="#00d4ff" stroke-opacity="0.35" stroke-width="1.5" />
+  <text x="32" y="33" font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace" font-size="30" font-weight="700" fill="#00d4ff" text-anchor="middle" dominant-baseline="central" letter-spacing="-1">PS</text>
+</svg>

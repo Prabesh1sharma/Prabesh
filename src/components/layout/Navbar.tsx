@@ -43,7 +43,6 @@ export default function Navbar() {
           </span>
           <span className="hidden text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors sm:inline">
             {personalInfo.firstName}
-            <span className="text-[var(--accent-primary)]">.</span>
           </span>
         </a>
 

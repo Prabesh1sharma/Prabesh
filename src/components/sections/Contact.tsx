@@ -39,7 +39,9 @@ export default function Contact() {
           </div>
           <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-6xl">
             Let&apos;s build something{" "}
-            <AccentUnderline variant="scribble">extraordinary</AccentUnderline>.
+            <span className="whitespace-nowrap">
+              <AccentUnderline variant="scribble">extraordinary</AccentUnderline>.
+            </span>
           </h2>
           <p className="mt-5 text-base md:text-lg text-[var(--text-secondary)]">
             Whether it&apos;s an agent platform, a custom LLM pipeline, or a
@@ -47,17 +49,7 @@ export default function Contact() {
             interested.
           </p>
 
-          {personalInfo.availableForWork ? (
-            <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 font-mono text-xs text-emerald-300">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
-              </span>
-              Open to full-time, contract, and freelance roles
-            </div>
-          ) : null}
-
-          <div className="mt-4 inline-flex items-center gap-1.5 text-xs text-[var(--text-secondary)]">
+          <div className="mt-6 inline-flex items-center gap-1.5 text-xs text-[var(--text-secondary)]">
             <MapPin size={12} />
             {personalInfo.location}
           </div>
