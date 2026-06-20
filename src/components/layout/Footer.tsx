@@ -71,11 +71,6 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-[var(--border)] pt-6 text-xs text-[var(--text-muted)] sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
-          <p className="font-mono">
-            Built with{" "}
-            <span className="text-[var(--accent-primary)]">Next.js</span> +{" "}
-            <span className="text-[var(--accent-secondary)]">Framer Motion</span>
-          </p>
         </div>
       </div>
     </footer>

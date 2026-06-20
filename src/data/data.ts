@@ -114,24 +114,24 @@ export const personalInfo: PersonalInfo = {
   name: "Prabesh Sharma",
   firstName: "Prabesh",
   lastName: "Sharma",
-  title: "AI Engineer & ML Researcher",
+  title: "AI Engineer",
   tagline:
     "Designing intelligent systems that think, learn, and ship to production.",
-  bio: "Computer Engineer specializing in AI & ML solutions — building agentic systems, LLM workflows, and computer-vision pipelines that scale from research to real users.",
+  bio: "Computer Engineer specializing in AI & ML solutions , building Models, Agentic systems, and Computer-vision pipelines that scale from research to real users.",
   longBio:
-    "I'm a Computer Engineer focused on shipping AI that earns its keep in production. I architect multi-agent systems for planning, research, and retrieval, build LLM workflows that cut cost without sacrificing quality, and craft computer-vision models that catch what humans miss. Currently designing agents at Inspiring Lab, previously engineered an end-to-end SDLC automation platform at Skillrank.",
+    "I'm a Computer Engineer who builds AI across computer vision, NLP, and LLMs. I train models, deploy them on the cloud, and run them in production, monitoring how they perform, debugging issues, and fixing them to keep things reliable. I've also Work on AI systems that automate the complete software development lifecycle from generating production codebases to deployment.",
   email: "sharmaprabesh2027@gmail.com",
   location: "Nepal",
   profileImage: "/prabesh-duotone-amber.png",
   resume:
-    "https://drive.google.com/file/d/1gUj-H_fM0uiVcC9vkhBVi7KOwyQ64r4K/view?usp=sharing",
+    "https://drive.google.com/file/d/1R1fldSDhcUTPoE5t96MJLK9lwZ_obv4u/view?usp=sharing",
   availableForWork: true,
   roles: [
     "AI Engineer",
     "ML Researcher",
-    "LLM Architect",
-    "Agent Systems Builder",
-    "Problem Solver",
+    "ML Engineer",
+    "Software Engineer",
+    "Data Engineers",
   ],
 };
 
@@ -175,26 +175,33 @@ export const experiences: Experience[] = [
     role: "AI Engineer",
     type: "Full-time",
     startDate: "Aug 2025",
-    endDate: "Present",
-    location: "Remote",
+    endDate: "May 2026",
+    location: "Onsite",
     description:
-      "Designing multi-agent systems and scalable backend infrastructure for document intelligence and content generation.",
+      "Building production AI across conversational systems, document intelligence, computer vision, and data pipelines from prototype to monitored deployment.",
     achievements: [
-      "Built multiple agents for planning, research, database querying, and presentation generation.",
-      "Architected scalable backend APIs for document ingestion, RabbitMQ-based queueing, deletion, and slide content management.",
-      "Created multimodal agents capable of searching and retrieving specific content across diverse document types.",
-      "Optimized agent performance to reduce processing time without compromising accuracy.",
-      "Mentoring AI interns building reinforcement-learning-based agents that learn from human feedback.",
+      "Developed an AI-powered sales chatbot with intent recognition, semantic product search, multi-format document ingestion, shopping cart integration, and voice support driving 24/7 automated e-commerce sales operations.",
+      "Built an advisory chatbot with strict RAG citation constraints, multi-step query understanding, compliance-accurate response generation, and intelligent human escalation for complex queries.",
+      "Developed LLM-based data extraction pipelines for unstructured PDFs, combining prompt engineering, regex-based table filtering, and automated human-review flagging.",
+      "Built a multi-source reporting engine integrating structured databases, graph database, and vector databases.",
+      "Processed large-scale weather and particle datasets with data cleaning, imputation, preprocessing, deployment, and monitoring for forecasting.",
+      "Developed computer vision models for classification and detection, implemented MLOps pipelines for training, and quantized models to ONNX format for lightweight deployment.",
+      "Implemented feedback loops and continuous learning from human corrections, iteratively refining knowledge bases and improving response quality across chatbot pipelines.",
+      "Mentored junior engineers and collaborated with clients to convert business requirements into production-ready AI solutions.",
     ],
     technologies: [
       "Python",
       "LangChain",
       "LangGraph",
+      "CrewAI",
       "RabbitMQ",
+      "Celery and Redis",
       "FastAPI",
       "PostgreSQL",
       "Vector DBs",
       "LLMs",
+      "Pytorch",
+      
     ],
   },
   {
@@ -206,22 +213,24 @@ export const experiences: Experience[] = [
     endDate: "July 2025",
     location: "Remote",
     description:
-      "Contributed to an AI-powered SDLC automation platform that generates production codebases from a single prompt.",
+      "Built an AI-powered SDLC automation platform integrating multimodal LLM workflows and agentic systems to scaffold and deploy full-stack projects.",
     achievements: [
-      "Engineered a system that produces a full end-to-end codebase with automated GitHub integration, Supabase setup, and one-click deployment from a single instruction.",
-      "Built LLM workflows that generate architecture, design, and context in one streaming call — cutting cost by 25%.",
-      "Developed agents for Figma-to-code conversion, streamlining the design-to-development pipeline.",
-      "Automated backend deployment to a one-click flow.",
+      "Developed an AI-powered SDLC automation platform integrating multimodal LLM workflows and agentic systems.",
+      "Designed streaming workflows for generating system architecture, context, and design, reducing operational cost by 25%.",
+      "Built an agentic code generation system with the team that scaffolds full-stack projects from system architecture, generating containerized frontend and backend code with automated Supabase integration.",
+      "Developed agents for Figma-to-code automation, streamlining the design-to-development pipeline.",
+      "Automated one-click deployment pipelines for agent-generated backend code, reducing manual operational overhead.",
     ],
     technologies: [
       "Python",
       "LLMs",
-      "LangChain",
+      "Agentic System",
       "Streaming APIs",
       "Supabase",
       "GitHub APIs",
       "Figma API",
       "Docker",
+      "Kubernetes"
     ],
   },
   {
@@ -282,7 +291,7 @@ export const projects: Project[] = [
     year: 2025,
     highlights: [
       "13 anomaly classes detected in real time",
-      "WebRTC + WebSocket low-latency pipeline",
+      "WebRTC + WebSocket low-latency pipeline for alert and surveillance",
       "Published research article",
     ],
   },
@@ -297,7 +306,7 @@ export const projects: Project[] = [
     category: "AI/ML",
     githubUrl: "https://github.com/Prabesh1sharma/ImageCaptioning",
     image: "/Imagecaptions.webp",
-    featured: true,
+    featured: false,
     year: 2024,
     highlights: [
       "Multi-architecture transformer stack",
@@ -316,7 +325,7 @@ export const projects: Project[] = [
     category: "NLP",
     githubUrl: "https://github.com/Prabesh1sharma/PDF-Question-Answering",
     image: "/pdf.jpg",
-    featured: true,
+    featured: false,
     year: 2024,
     highlights: [
       "Weaviate vector search",
@@ -395,6 +404,26 @@ export const projects: Project[] = [
       "Full Django stack",
     ],
   },
+  {
+    id: 8,
+    title: "EduPlanner",
+    description:
+      "AI-powered learning platform that generates structured study plans, breaks them into submodules, and curates resources for any topic.",
+    longDescription:
+      "EduPlanner is a full-stack AI learning planner backend built with FastAPI and LangGraph. Users describe what they want to learn and the system generates a structured course plan, decomposes it into detailed submodules, recommends relevant YouTube resources, and tracks progress with notes, activity heatmaps, and streaks. It features JWT authentication, a multi-provider LLM layer (Anthropic, OpenAI, Google, Groq, Azure, vLLM) with per-user model settings, real-time streaming responses via SSE, and MongoDB persistence.",
+    tags: ["Python", "FastAPI", "LangGraph", "LangChain", "MongoDB", "LLM"],
+    category: "AI/ML",
+    githubUrl: "https://www.eduplanner.prabeshsharma.com.np/",
+    image: "/EduPlanner.jpg",
+    featured: true,
+    year: 2025,
+    highlights: [
+      "AI-generated structured study plans with LangGraph workflows",
+      "Multi-provider LLM support with per-user model selection",
+      "Real-time streaming (SSE), YouTube curation & progress tracking",
+    ],
+  },
+
 ];
 
 export const skills: Record<string, SkillCategory> = {
@@ -402,6 +431,7 @@ export const skills: Record<string, SkillCategory> = {
     label: "AI & Machine Learning",
     description: "Where I spend most of my time.",
     items: [
+      { name: "Machine Learning", level: 95 },
       { name: "LLMs & Agentic Systems", level: 92 },
       { name: "RAG & Vector Search", level: 90 },
       { name: "Transformers", level: 88 },
@@ -440,17 +470,15 @@ export const skills: Record<string, SkillCategory> = {
       { name: "Git & GitHub", level: 92 },
       { name: "Docker", level: 80 },
       { name: "RabbitMQ", level: 78 },
-      { name: "Weaviate / ChromaDB", level: 85 },
-      { name: "Supabase", level: 78 },
-      { name: "Streamlit", level: 85 },
+      { name: "Celery and Redis", level: 90 },
+      { name: "Kubernetes", level: 80 },
     ],
   },
 };
 
 export const currentlyLearning = [
   "Distributed agent orchestration",
-  "MLOps for LLM pipelines",
-  "Multimodal retrieval architectures",
+  "Memory on Agents",
   "Reinforcement learning from human feedback",
 ];
 
@@ -511,10 +539,10 @@ export const blogs: BlogPost[] = [
 ];
 
 export const stats: Stat[] = [
-  { label: "Projects Shipped", value: "20", suffix: "+" },
-  { label: "Years of Engineering", value: "3", suffix: "+" },
-  { label: "Models in Production", value: "15", suffix: "+" },
-  { label: "Blog Posts Published", value: "10", suffix: "+" },
+  { label: "Projects Shipped", value: "16", suffix: "+" },
+  { label: "Years of Engineering", value: "2", suffix: "+" },
+  { label: "Models in Production", value: "10", suffix: "+" },
+  { label: "Blog Posts Published", value: "6", suffix: "+" },
 ];
 
 export const whatIBring = [

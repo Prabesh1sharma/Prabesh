@@ -44,9 +44,10 @@ export default function Contact() {
             </span>
           </h2>
           <p className="mt-5 text-base md:text-lg text-[var(--text-secondary)]">
-            Whether it&apos;s an agent platform, a custom LLM pipeline, or a
-            computer-vision system — if it&apos;s ambitious, I&apos;m
-            interested.
+            An agent platform, a model to train and fine-tune, a custom LLM
+            pipeline, a Python-powered backend, or a computer-vision system that
+            sees what others miss — if it&apos;s ambitious and a little crazy,
+            I&apos;m already in.
           </p>
 
           <div className="mt-6 inline-flex items-center gap-1.5 text-xs text-[var(--text-secondary)]">
