@@ -8,6 +8,7 @@ import Skills from "@/components/sections/Skills";
 import Education from "@/components/sections/Education";
 import Blogs from "@/components/sections/Blogs";
 import Contact from "@/components/sections/Contact";
+import BuyMeMomo from "@/components/sections/BuyMeMomo";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Education />
         <Blogs />
         <Contact />
+        <BuyMeMomo />
       </main>
       <Footer />
     </>

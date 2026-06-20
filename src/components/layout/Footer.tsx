@@ -28,6 +28,14 @@ export default function Footer() {
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-[var(--text-secondary)]">
               {personalInfo.tagline}
             </p>
+            <a
+              href={personalInfo.buyMeMomo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ff8a00] to-[#ff5a00] px-4 py-2 text-sm font-semibold text-white shadow-md shadow-[#ff8a0040] transition-shadow hover:shadow-[#ff8a0060]"
+            >
+              🥟 Buy me a momo
+            </a>
           </div>
 
           <div>

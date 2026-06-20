@@ -32,6 +32,7 @@ export interface PersonalInfo {
   location: string;
   profileImage: string;
   resume: string;
+  buyMeMomo: string;
   availableForWork: boolean;
   roles: string[];
 }
@@ -125,6 +126,7 @@ export const personalInfo: PersonalInfo = {
   profileImage: "/prabesh-duotone-amber.png",
   resume:
     "https://drive.google.com/file/d/1R1fldSDhcUTPoE5t96MJLK9lwZ_obv4u/view?usp=sharing",
+  buyMeMomo: "https://buymemomo.com/Prabesh1sharma",
   availableForWork: true,
   roles: [
     "AI Engineer",
